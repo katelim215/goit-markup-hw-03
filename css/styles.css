@@ -32,6 +32,7 @@ body {
 header {
     border-bottom: 1px solid var(--cornflower);
     background: var(--white);
+    height: 72px;
 }
 
 header .logo {
@@ -41,6 +42,7 @@ header .logo {
     line-height: 21px;
     letter-spacing: 0.54px;
     margin-right: 76px;
+    display: inline-block;
 }
 
 .logo span {
@@ -74,19 +76,30 @@ header .logo {
 }
 
 .nav-list-item {
-    display: inline-flex;
-    column-gap: 40px;
+    display: inline-block;
+    margin-right: 40px;
 }
 
 .address-list-item {
-    display: inline-flex;
+    display: inline-block;
+    margin-right: 40px;
 }
 
 .main-header-menu {
-    display: inline-block;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header-container {
+    width: 1158px;
     padding: 0px 15px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25.5px;
+    margin-bottom: 25.5px;
+    display: inline-flex;
+
 }
 
 .nav-list-item .nav-list-link:hover,
@@ -106,10 +119,6 @@ header .logo {
     margin-right: auto;
 }
 
-.main-header-container {
-    display: flex;
-}
-
 .section {
     padding: 120px 0px;
 }
@@ -120,7 +129,6 @@ header .logo {
 .section-main-header {
     background: var(--navyblue);
     text-align: center;
-    display: block;
 }
 
 .section-main-header-title {
@@ -129,10 +137,11 @@ header .logo {
     font-size: 56px;
     line-height: 60px;
     letter-spacing: 1.12px;
-    /* padding-top: 188px;
-    padding-bottom: 48px; */
+    padding-top: 188px;
+    padding-bottom: 48px;
     width: 496px;
-    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .section-main-header-cta {
@@ -148,7 +157,7 @@ header .logo {
     border: unset;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    display: block;
+    margin-bottom: 188px;
 }
 
 .section-main-header-cta:hover,
@@ -289,6 +298,7 @@ header .logo {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.4px;
+    padding: 32px 16px 0px;
 }
 
 .portfolio-images-items .portfolio-images-description {
@@ -296,4 +306,28 @@ header .logo {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
+    padding: 8px 16px 32px;
+}
+
+.portfolio-buttons-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
+.portfolio-images-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.portfolio-images-items {
+    width: calc((100% - 48px) / 3);
+    border: 1px solid var(--cornflower);
+    background: var(--white);
+    margin-bottom: 48px;
 }

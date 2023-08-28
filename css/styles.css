@@ -40,6 +40,7 @@ header .logo {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.54px;
+    margin-right: 76px;
 }
 
 .logo span {
@@ -72,6 +73,22 @@ header .logo {
     color: var(--navyblue);
 }
 
+.nav-list-item {
+    display: inline-flex;
+    column-gap: 40px;
+}
+
+.address-list-item {
+    display: inline-flex;
+}
+
+.main-header-menu {
+    display: inline-block;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .nav-list-item .nav-list-link:hover,
 .nav-list-item .nav-list-link:focus {
     color: var(--ocean);
@@ -82,13 +99,28 @@ header .logo {
     color: var(--ocean);
 }
 
+.container {
+    width: 1158px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header-container {
+    display: flex;
+}
+
+.section {
+    padding: 120px 0px;
+}
+
 
 /* main content */
 
 .section-main-header {
     background: var(--navyblue);
-    width: 1440px;
     text-align: center;
+    display: block;
 }
 
 .section-main-header-title {
@@ -97,11 +129,14 @@ header .logo {
     font-size: 56px;
     line-height: 60px;
     letter-spacing: 1.12px;
+    /* padding-top: 188px;
+    padding-bottom: 48px; */
+    width: 496px;
+    display: block;
 }
 
 .section-main-header-cta {
     padding: 16px 32px;
-    gap: 10px;
     border-radius: 4px;
     background: var(--iris);
     color: var(--white);
@@ -113,6 +148,7 @@ header .logo {
     border: unset;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    display: block;
 }
 
 .section-main-header-cta:hover,
@@ -127,10 +163,13 @@ header .logo {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    padding-bottom: 72px;
 }
 
 .features-list {
     list-style: none;
+    display: flex;
+    gap: 24px;
 }
 
 .features-list-item-title {
@@ -153,12 +192,25 @@ header .logo {
     list-style: none;
 }
 
+.apps-list {
+    list-style-type: none;
+    display: flex;
+    gap: 24px
+}
+
 .section-team {
     background: var(--cloud);
+    padding: 120px 0px;
 }
 
 .team-list {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+.team-list-items {
+        background: var(--white);
 }
 
 .team-list-items .team-list-title {
@@ -167,6 +219,7 @@ header .logo {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.4px;
+    padding: 32px 0px 8px;
 }
 
 .team-list-items .team-list-description {
@@ -175,6 +228,7 @@ header .logo {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.32px;
+    padding-bottom: 32px;
 }
 
 /* page footer */
@@ -183,6 +237,7 @@ header .logo {
     background: var(--navyblue);
     width: 1440px;
     flex-shrink: 0;
+    padding-top: 101.5px;
 }
 
 .footer-description {
@@ -191,6 +246,8 @@ header .logo {
     line-height: 24px;
     letter-spacing: 0.32px;
     width: 264px;
+    padding-top: 17.5px;
+    padding-bottom: 100px;
 }
 
 .section-footer .logo {

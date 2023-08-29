@@ -323,6 +323,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+
 }
 
 .portfolio-images-items {
@@ -330,4 +331,8 @@ header {
     border: 1px solid var(--cornflower);
     background: var(--white);
     margin-bottom: 48px;
+}
+
+.portfolio-container {
+    padding-bottom: 120px;
 }
